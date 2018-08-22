@@ -8,10 +8,10 @@ const navOptions = [
 ];
 
 const Nav = () => {
-  return navOptions.map((name, index) => {
+  return navOptions.map((item, index) => {
     return (
-      <li className="nav-item">
-        <a className="nav-link" href="#" key="">j</a>
+      <li className="nav-item" key={index}>
+        <a className="nav-link" href="">{item.name}</a>
       </li>
     )
   })

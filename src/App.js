@@ -6,7 +6,16 @@ import Header from './components/header';
 class App extends Component {
   render() {
     return (
-      <Header />
+      <div>
+        <Header />
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <h1>Welcome</h1>
+            </div>
+          </div>
+        </div>
+      </div>
     );
   }
 }
