@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,200i,400,400i,600,600i");
+:root {
+  font-size: 10px; }
+
 * {
   font-family: 'Montserrat', sans-serif;
   font-weight: 100; }
@@ -15,3 +18,14 @@ body {
   margin-top: 5rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem; }
+
+h1 {
+  font-size: 3rem; }
+
+time {
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 3rem; }
+
+p {
+  font-size: 1.6rem; }
