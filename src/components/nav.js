@@ -1,40 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
+import { Link, NavLink } from 'react-router-dom';
 
 const navOptions = [
   {name: 'Home', link: '/'},
   {name: 'Me Mine and Ours', link: '/me'},
   {name: 'Collection', link: '/collection'},
-  {name: 'Yo!', link: '/yo'}
+  {name: 'Yo Random Stuff!', link: '/yo'}
 ];
-
-// const Nav = () => {
-//   return navOptions.map((item, index) => {
-//     return (
-//       <Router key={index}>
-//         <li className="nav-item">
-//           <Link to={item.link} className="nav-link">{item.name}</Link>
-//         </li>
-//       </Router>
-//     )
-//   })
-// };
 
 class Nav extends React.Component {
   render() {
     return (
-      <Router>
-        <ul className="navbar-nav mr-auto">
-          {
-            navOptions.map((item, index) =>
-              <li className="nav-item" key={index}>
-                <Link className="nav-link"  to={item.link}>{item.name}</Link>
-              </li>
-            )
-          }
-        </ul>
-      </Router>
+      <ul className="navbar-nav mr-auto">
+        {
+          navOptions.map((item, index) =>
+            <li className="nav-item" key={index}>
+              <NavLink className="nav-link" activeClassName="active"  to={item.link}>{item.name}</NavLink>
+            </li>
+          )
+        }
+      </ul>
     )
   }
 }

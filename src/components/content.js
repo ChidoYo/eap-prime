@@ -1,19 +1,23 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import myData from '../json/static-data.json';
+import Home from './home';
+import Me from './me';
+import Collection from './collection';
+import Yo from './yo';
 
 console.log('myData', myData);
 
 class Content extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  // }
+
   render() {
     return (
-          <div className="col">
-            <h1>{myData[0].title}</h1>
-            <time>{myData[0].timestamp}</time>
-            <p>{myData[0].content}</p>
-          </div>
+      <div className="row">
+        <Route exact path="/" component={Home} />
+        <Route path="/me" component={Me} />
+        <Route path="/collection" component={Collection} />
+        <Route path="/yo" component={Yo} />
+      </div>
     );
   }
 }

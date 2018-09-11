@@ -16,12 +16,17 @@ body {
 
 .navbar-brand {
   font-style: italic;
+  font-size: 18px;
+}
+
+.navbar-nav {
+  font-size: 14px;
 }
 
 .container {
   background-color: rgba(#fff, 0.8);
   border-radius: 2px 20px 2px 20px;
-  margin-top: 5rem;
+  margin-top: 7rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
