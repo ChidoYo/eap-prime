@@ -15,7 +15,7 @@ class Nav extends React.Component {
         {
           navOptions.map((item, index) =>
             <li className="nav-item" key={index}>
-              <NavLink className="nav-link" activeClassName="active"  to={item.link}>{item.name}</NavLink>
+              <NavLink exact className="nav-link" activeClassName="active"  to={item.link}>{item.name}</NavLink>
             </li>
           )
         }
